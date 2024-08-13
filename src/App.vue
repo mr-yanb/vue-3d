@@ -25,7 +25,10 @@ const gl = {
         path="https://raw.githubusercontent.com/Tresjs/assets/main/models/fbx/low-poly-truck/Jeep_done.fbx"
         :scale="0.025"
       /> -->
-      <GLTFModel path="https://raw.githubusercontent.com/Tresjs/assets/main/models/gltf/venom-snake-sculpt/scene.gltf" draco />
+      <GLTFModel
+        path="https://raw.githubusercontent.com/mr-yanb/vue-3d/main/src/models/test1.glb"
+        draco
+      />
     </Suspense>
     <TresDirectionalLight
       color="#FFFFFF"
