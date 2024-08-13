@@ -16,27 +16,27 @@ const gl = {
 };
 </script>
 <template>
-  <TresCanvas clear-color="#000000">
+  <TresCanvas preset="realistic" clear-color="#000000">
     <TresPerspectiveCamera :position="[5, 5, 5]" />
     <OrbitControls />
     <Suspense>
-      <!-- <UgglyBunny /> -->
+      <UgglyBunny />
       <!-- <FBXModel
         path="https://raw.githubusercontent.com/Tresjs/assets/main/models/fbx/low-poly-truck/Jeep_done.fbx"
         :scale="0.025"
       /> -->
-      <GLTFModel
-        path="https://raw.githubusercontent.com/mr-yanb/vue-3d/main/src/models/test1.glb"
+      <!-- <GLTFModel
+        path="https://raw.githubusercontent.com/mr-yanb/vue-3d/main/src/models/test2.glb"
         draco
-      />
+      /> -->
     </Suspense>
     <TresDirectionalLight
       color="#FFFFFF"
       :position="[10, 10, 10]"
       :look-at="[0, 0, 0]"
-      :intensity="5"
+      :intensity="1"
     />
-    <TresAmbientLight :intensity="5" />
+    <TresAmbientLight :intensity="1" />
     <!-- <TresGridHelper /> -->
   </TresCanvas>
 </template>
